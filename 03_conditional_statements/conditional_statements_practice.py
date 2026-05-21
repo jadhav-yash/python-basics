@@ -8,7 +8,7 @@ customer_name = input("Enter you name: ")
 print("Hello,", customer_name)
 
 
-total_amount = int(input("\nEnter the total shopping amount: "))
+total_amount = int(input("Enter the total shopping amount: "))
 
 discount = 0
 membership_discount = 0
@@ -75,7 +75,7 @@ print("=========================================")
 # ===================================================
 #         Hospital Patient Emergency System
 # ===================================================
-patient_name = input("Enter patient name: ")
+patient_name = input("\nEnter patient name: ")
 
 
 age = int(input("Enter patient age: "))
@@ -138,11 +138,15 @@ food_item = input("Enter food item: ")
 quantity = int(input("Enter quantity: "))
 if quantity > 5 :
     print("Bulk order 5% discount!")
+else: 
+    print("You quantity is less than 5, No Discount!")
 
 
 distance_km = float(input("Enter delivery distance in km: "))
 if distance_km > 5 :
     print("Extra delivery charge applies.")
+else:
+    print("Free delivery!")
 
 
 coupon_code = input("Enter coupon code (if any): ")
@@ -153,6 +157,8 @@ if coupon_code == "FOOD50" :
 payment_mode = input("Enter payment mode (Card/Cash/UPI): ")
 if payment_mode == "upi" or payment_mode == "Upi" or payment_mode == "UPI" :
     print("You got 5% cashback on total bill!")
+else:
+    print("Not applicable for cashback.")
 
 
 print("=========================================")
@@ -161,10 +167,12 @@ print("=========================================")
 print("Restaurant name: ", restaurant_name)
 print("Food item: ", food_item)
 print("Quantity: ", quantity)
-print("Delivery distance: ", distance_km, "km")
-print("Coupon code: ", coupon_code if coupon_code else "No coupon code")
-print("Payment mode: ", payment_mode)
-print("Total bill: ", "Calculated based on quantity, distance and discounts")
+print("Total bill: ", "Calculated based on food item and quantity")
+print("Delivery charge: ", "Extra delivery charges" if distance_km > 5 else "Free delivery")
+print("Discount: ", "5% discount" if quantity > 5 else "No discount" or "₹50 off" if coupon_code == "FOOD50" else "No discount")
+print("Cashback: ", "5% cashback" if payment_mode == "upi" or payment_mode == "Upi" or payment_mode == "UPI" else "No Cashback")
+print("Final bill: ", "Calculated based on total bill, distance, discounts and cashback")
+print("Free item eligibility: ", "If total bill amount will be more than ₹1000 than free desert")
 print("=========================================")
 print("     Thank you for ordering with us!     ")
 print("=========================================")
