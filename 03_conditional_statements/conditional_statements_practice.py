@@ -1,215 +1,150 @@
-# ===================================================
-#           Smart Grocery Billing System 
-# ===================================================
-print("=========================================")
-print("     Welcome to Smart Grocery Store      ")
-print("=========================================")
-customer_name = input("Enter you name: ")
-print("Hello,", customer_name)
+# =========================================================
+# IF STATEMENT
+# =========================================================
 
+print("1) SIMPLE IF STATEMENT")
 
-total_amount = int(input("Enter the total shopping amount: "))
+age = 20
 
-discount = 0
-membership_discount = 0
-final_amount = total_amount
+if age >= 18:
+    print("You are eligible for voting")
 
-if total_amount > 5000 :
-    discount = total_amount * (20 / 100)
-    final_amount = total_amount - discount 
-    print("You got 20% discount!")
-    print("Total amount after discount: ", final_amount)
-elif total_amount > 2000 and total_amount <=5000 :
-    discount = total_amount * (10 / 100)
-    final_amount = total_amount - discount
-    print("You got 10% discount!")
-    print("Total amount after discount: ", final_amount)
-else :
-    print("No discount!")
+print("----------------------------------")
 
+# =========================================================
+# 2) IF-ELSE STATEMENT
+# =========================================================
 
-membership_type = input("\nEnter your membership type (Silver,Gold,None): ")
-if membership_type == "gold" or membership_type == "Gold" or membership_type == "GOLD" :
-    membership_discount = final_amount * (5 / 100)
-    final_amount -= membership_discount
-    print("You got extra 5% discount!")
-    print("Total amount after membership discount: ", final_amount)
-elif membership_type == "silver" or membership_type == "Silver" or membership_type == "SILVER" :
-    membership_discount = final_amount * (3 / 100)
-    final_amount -= membership_discount
-    print("You got extra 3% discount!")
-    print("Total amount after membership discount: ", final_amount)
-else : 
-    print("No discount!")
+print("2) IF ELSE STATEMENT")
 
+number = 7
 
-item_quantity = int(input("\nEnter the number of items you bought: "))
-if item_quantity > 10 :
-    print("You are eligible for free delivery!")
-else :
-    print("You are not eligible for free delivery.")
-
-
-gst = total_amount * (18 / 100)
-final_amount += gst
-print("\nAfter 18% GST the total amount becomes", final_amount)    
-
-
-print("=========================================")
-print("                Final Bill               ")
-print("=========================================")
-print("Customer name: ", customer_name)
-print("Original amount: ", total_amount)
-print("Discount amount: ", discount + membership_discount)
-print("GST amount: ", gst)
-print("Final payable amount: ", final_amount)
-print("Delivery status: ", "Free delivery" if item_quantity > 10 else "Standard delivery")
-print("=========================================")
-print("     Thank you for shopping with us!     ")
-print("=========================================")
-
-
-
-
-
-# ===================================================
-#         Hospital Patient Emergency System
-# ===================================================
-patient_name = input("\nEnter patient name: ")
-
-
-age = int(input("Enter patient age: "))
-
-
-temperature = float(input("\nEnter patient temperature: "))
-if temperature > 102 :
-    print("Patient has high fever!")
-else :
-    print("Patient temperature is normal.")
-
-
-oxygen_level = float(input("\nEnter patient oxygen level: "))
-if oxygen_level < 90 :
-    print("Patient has low oxygen level!")
-else :
-    print("Patient oxygen level is normal.")
-
-
-blood_pressure_status = input("\nEnter patient blood pressure status (Normal,High,Low): ")
-
-
-insurance_status = input("\nDoes the patient have insurance? (Yes/No): ")
-if insurance_status == "Yes" or insurance_status == "yes" or insurance_status == "YES" :
-    print("You got 15% discount on medical bills!")
-else :
-    print("No discount on medical bills.")
-
-
-print("=========================================")
-print("                Patient Report           ")
-print("=========================================")
-print("Patient name: ", patient_name)
-print("Patient category: ", "High risk" if temperature > 102 or oxygen_level < 90 or blood_pressure_status == "high" or blood_pressure_status == "High" or blood_pressure_status == "HIGH" else "Low risk")
-print("Age: ", age)
-print("Priority: ", "First priority" if age > 60 else "Second priority")
-print("Estimated treatment cost: ", "High" if temperature > 102 or oxygen_level < 90 else "Low")
-print("Discount: ", "15% discount" if insurance_status == "Yes" or insurance_status == "yes" or insurance_status == "YES" else "No discount")
-print("Final payable amount: ", "High" if temperature > 102 or oxygen_level < 90 else "Low")
-print("=========================================")
-print("    Thank you for using our services!    ")
-print("=========================================")
-
-
-
-
-
-# ===================================================
-#             Online Food Delivery App  
-# ===================================================
-print("=========================================")
-print("       Welcome to Food Delivery App      ")
-print("=========================================")
-restaurant_name = input("Enter restaurant name: ")
-
-
-food_item = input("Enter food item: ")
-
-
-quantity = int(input("Enter quantity: "))
-if quantity > 5 :
-    print("Bulk order 5% discount!")
-else: 
-    print("You quantity is less than 5, No Discount!")
-
-
-distance_km = float(input("Enter delivery distance in km: "))
-if distance_km > 5 :
-    print("Extra delivery charge applies.")
+if number % 2 == 0:
+    print("Even Number")
 else:
-    print("Free delivery!")
+    print("Odd Number")
 
+print("----------------------------------")
 
-coupon_code = input("Enter coupon code (if any): ")
-if coupon_code == "FOOD50" :
-    print("You got ₹50 off with coupon code!")
+# =========================================================
+# 3) IF-ELIF-ELSE
+# =========================================================
 
+print("3) IF ELIF ELSE")
 
-payment_mode = input("Enter payment mode (Card/Cash/UPI): ")
-if payment_mode == "upi" or payment_mode == "Upi" or payment_mode == "UPI" :
-    print("You got 5% cashback on total bill!")
+marks = 1
+
+if marks >= 90:
+    print("Grade A")
+
+elif marks >= 75:
+    print("Grade B")
+
+elif marks >= 50:
+    print("Grade C")
+
 else:
-    print("Not applicable for cashback.")
+    print("Fail")
+
+print("----------------------------------")
+
+# =========================================================
+# 4) NESTED IF
+# =========================================================
+
+print("4) NESTED IF")
+
+age = 22
+percentage = 85
+
+if age >= 18:
+
+    if percentage >= 80:
+        print("Admission Approved")
+
+    else:
+        print("Marks too low")
+
+else:
+    print("Age not eligible")
+
+print("----------------------------------")
+
+# =========================================================
+# 5) COMPARISON OPERATORS
+# =========================================================
+
+print("5) COMPARISON OPERATORS")
+
+a = 10
+b = 20
+
+if b > a:
+    print("b is greater than a")
+
+if a != b:
+    print("a and b are not equal")
+
+print("----------------------------------")
+
+# =========================================================
+# 6) LOGICAL OPERATORS
+# =========================================================
+
+print("6) LOGICAL OPERATORS")
+
+username = "admin"
+password = "python123"
+
+if username == "admin" and password == "python123":
+    print("Login Successful")
+
+else:
+    print("Invalid Username or Password")
+
+print()
 
 
-print("=========================================")
-print("              Order Summary              ")
-print("=========================================")
-print("Restaurant name: ", restaurant_name)
-print("Food item: ", food_item)
-print("Quantity: ", quantity)
-print("Total bill: ", "Calculated based on food item and quantity")
-print("Delivery charge: ", "Extra delivery charges" if distance_km > 5 else "Free delivery")
-print("Discount: ", "5% discount" if quantity > 5 else "No discount" or "₹50 off" if coupon_code == "FOOD50" else "No discount")
-print("Cashback: ", "5% cashback" if payment_mode == "upi" or payment_mode == "Upi" or payment_mode == "UPI" else "No Cashback")
-print("Final bill: ", "Calculated based on total bill, distance, discounts and cashback")
-print("Free item eligibility: ", "If total bill amount will be more than ₹1000 than free desert")
-print("=========================================")
-print("     Thank you for ordering with us!     ")
-print("=========================================")
+day = "Sunday"
+
+if day == "Saturday" or day == "Sunday":
+    print("Weekend")
+
+else:
+    print("Working Day")
+
+print()
 
 
+is_logged_in = False
 
+if not is_logged_in:
+    print("Please Login")
 
+print("----------------------------------")
 
-# ===================================================
-#       Student Scholarship Eligibility System      
-# ===================================================
-student_name = input("Enter student name: ")
-print("Hello,", student_name)
+# =========================================================
+# 7) SHORT HAND IF
+# =========================================================
 
+print("7) SHORT HAND IF")
 
-grade_10_percentage = float(input("Enter grade 10 percentage: "))
-grade_12_percentage = float(input("Enter grade 12 percentage: "))
-if grade_10_percentage > 90 and grade_12_percentage > 90 :
-    print("Student is eligible for Merit scholarship based on grades.")
+salary = 50000
 
+if salary > 30000: print("Good Salary")
 
-family_income = int(input("Enter family income: "))
-if family_income < 200000 :
-    print("Student is eligible for Financial scholarship based on family income.")
+print("----------------------------------")
 
+# =========================================================
+# 8) TERNARY OPERATOR
+# =========================================================
 
-category = input("Enter category (Open,OBC,SC,ST): ")
-if category == "SC" or category == "sc" or category == "Sc" and category == "ST" or category == "st" or category == "St" :
-    print("Student will get special relaxation.")
+print("8) TERNARY OPERATOR")
 
+age = 16
 
-entrance_exam_marks = int(input("Enter entrance exam marks: "))
-cutoff_marks = 85
-if entrance_exam_marks > cutoff_marks :
-    print("Student is approved for scholarship based on entrance exam marks.")
+result = "Adult" if age >= 18 else "Minor"
 
+print(result)
 
-attendance_percentage = int(input("Enter attendance percentage: "))
-if attendance_percentage < 75 :
-    print("Student is not eligible for scholarship due to low attendance.")
+print("----------------------------------")

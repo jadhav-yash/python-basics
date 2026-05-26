@@ -11,7 +11,7 @@ subjects = ["Math", "Science", "English", "History", "Computer"]
 # Tuple
 coordinates = (10, 20)
 # Set
-numbers = {1, 2, 3, 4, 5}
+numbers = {1, 2, 2, 4, 5}
 # Dictionary
 student_info = {"name": "Yash Jadhav", "age": 18, "marks": 85.5}
 # None
