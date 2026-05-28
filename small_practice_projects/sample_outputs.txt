@@ -1,0 +1,147 @@
+1. 
+============================================
+            EMAIL CLEANUP SYSTEM
+============================================
+Enter your email for cleaning:      yash   jadhav 123 4 @ gmail. co m
+Original email:      yash   jadhav 123 4 @ gmail. co m
+
+Cleaned email: yashjadhav1234@gmail.com
+
+
+2.
+============================================
+             USERNAME GENERATOR
+============================================
+Enter you name: Yash Jadhav
+Generated username: yash_jadhav
+
+
+3.
+============================================
+              ATTENDANCE REPORT
+============================================
+Attendance Data : ['P', 'A', 'P', 'P', 'L', 'P', 'A', 'P', 'P', 'L']
+
+Total Present Days:  6
+Total Absent Days:  2
+Total Leave Days:  2
+Total Working Records:  10
+
+
+4.
+============================================
+            SHOPPING CART SYSTEM
+============================================
+Your cart items are : ['Shoes', 'Watch', 'Shirt']
+
+Cart after removing 'Watch' : ['Shoes', 'Shirt']
+
+Cart after adding 'Mobile' : ['Shoes', 'Shirt', 'Mobile']
+
+
+5.
+============================================
+           WEBSITE VISITOR REPORT
+============================================
+Unique visitors : {'Ryan', 'Ethan', 'Sophia', 'Alex'}
+
+Number of unique visitors : 4
+
+
+6. 
+============================================
+        ONLINE EXAM RESULT DASHBOARD
+============================================
+Student Marks : [78, 56, 98, 65, 88, 91]
+Highest Marks : 98
+Lowest Marks  : 56
+Total Marks   : 476
+Average Marks : 79.33
+
+
+7.
+============================================
+              CHAT APPLICATION
+============================================
+Incoming Message :      hello alex welcome to office
+
+Final Formated Message : HELLO ALEX WELCOME TO OFFICE
+
+
+8.
+============================================
+              EMPLOYEE DETAILS
+============================================
+Name : Alex
+Department : IT
+Salary : 45000
+Experience : 2
+Email : alex@gmail.com
+
+
+9.
+============================================
+           OFFICE ASSET MANAGEMENT
+============================================
+Asset List without duplicate values : {'Headphones', 'Laptop', 'Keyboard', 'Mouse'}
+
+
+10.
+============================================
+        FOOD DELIVERY BILLING SYSTEM
+============================================
+Burger : 150
+Pizza : 300
+Cold Drink : 50
+
+Total Bill : 500
+Tax Amount : 90.0
+Final Payable Amount : 590.0
+
+
+11.
+============================================
+           CLIENT PROJECT TRACKER
+============================================
+Project List : ['UI Design', 'Database Setup', 'Testing']
+
+Database Setup Completed.
+Updated List : ['UI Design', 'Testing']
+
+API Integration Task Added.
+Updated List : ['UI Design', 'Testing', 'API Integration']
+
+
+12.
+============================================
+             PASSWORD VALIDATOR
+============================================
+Enter Password: Yash@j1307
+Valid Password
+
+
+13.
+============================================
+            MOVIE BOOKING SYSTEM
+============================================
+Unique Booked Seats : {'A2', 'B3', 'C2', 'A1'}
+
+
+14.
+============================================
+          EMPLOYEE SALARY DASHBOARD
+============================================
+Salary : 50000
+Bonus : 5000
+Tax : 3000
+Deduction : 1000
+Final Salary : 51000
+
+
+15.
+============================================
+           OFFICE INVENTORY SYSTEM
+============================================
+Unique Items List :  {'Files', 'Pen', 'Notebook', 'Marker'}
+
+Total Unique Items : 4
